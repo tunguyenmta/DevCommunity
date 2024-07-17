@@ -1,4 +1,3 @@
-import React from "react";
 import TrendingPost from "./TrendingPost";
 import Carousel from "./Carousel";
 

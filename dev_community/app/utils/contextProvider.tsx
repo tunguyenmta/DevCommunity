@@ -87,7 +87,7 @@ const ContextProvider: React.FC<ContextProviderProps> = ({
       const userExpiresAt = new Date(decodedUserToken.exp * 1000);
       if (differenceInMinutes(userExpiresAt, now) < 10) {
         try {
-          const res = await fetch('/pages/api/refresh-token', {
+          const res = await fetch('http://localhost:3000/pages/api/refresh-token', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ token: userToken, refreshToken }),
@@ -99,7 +99,7 @@ const ContextProvider: React.FC<ContextProviderProps> = ({
           } 
           else {
             try{
-              const res = await fetch('/pages/api/auth', { method: 'DELETE' });
+              const res = await fetch('http://localhost:3000/pages/api/auth', { method: 'DELETE' });
               if(res.ok){
                 handleSetUserToken("");
                 handleSetRefreshToken("");

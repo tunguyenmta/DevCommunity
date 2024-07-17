@@ -66,7 +66,7 @@ const EditProfile: React.FC<EditProfileProps> = ({ show, showProfile, handleClic
     }, [userId]);
 
     const handleonClick = async () => {
-        const res = await fetch("/pages/api/auth", {
+        const res = await fetch("http://localhost:3000/pages/api/auth", {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

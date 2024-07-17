@@ -1,6 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
-import React from "react";
 import "./Carousel.css";
 import { useRouter } from "next/navigation";
 interface Component {

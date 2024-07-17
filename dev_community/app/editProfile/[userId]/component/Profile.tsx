@@ -93,7 +93,7 @@ const fetchUpdate = async (
 
     const newToken = await res.json();
     
-    const response = await fetch("/pages/api/auth", {
+    const response = await fetch("http://localhost:3000/pages/api/auth", {
         method: "POST",
         body: JSON.stringify({ token: newToken.idToken, refreshToken: newToken.idRefreshToken, maxAge: newToken.refreshTokenValidSecond }),
     });

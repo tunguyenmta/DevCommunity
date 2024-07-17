@@ -28,7 +28,7 @@ const Page = ({ params }: { params: { idslug: string } }) => {
             setError(true);
         }
         const data = await res.json();
-        const result1 = await fetch("/pages/api/auth", {
+        const result1 = await fetch("htpp://localhost:3000/pages/api/auth", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const Page = ({ params }: { params: { idslug: string } }) => {
 
         const decodedToken = jwt.decode(tokenData) as UserProps;
         if (decodedToken) {
-            window.location.href = "http://192.168.1.136:3000/editProfile/" + decodedToken.id + "?search=forgotPassword";
+            window.location.href = `http://localhost:3000/editProfile/` + decodedToken.id + "?search=forgotPassword";
         }
     };
     useEffect(() => {

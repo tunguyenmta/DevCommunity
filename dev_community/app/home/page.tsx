@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './components/Header';
 import Taglist from './components/Taglist';
 import Hero from './components/hero/Hero';
@@ -6,7 +5,6 @@ import Latest from './components/Latest';
 import News from './components/New';
 import Book from './components/Book';
 import Footer from './components/Footer';
-// import { cookies } from 'next/headers';
 interface TagProps {
   id: number;
   name: string;

@@ -104,7 +104,7 @@ const FormSignIn = ({ onRouting, handleLoadingState }: FormSignInProps) => {
                     position: "top-center",
                     autoClose: 500,
                 });
-                const result1 = await fetch("/pages/api/auth", {
+                const result1 = await fetch("http://localhost:3000/pages/api/auth", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

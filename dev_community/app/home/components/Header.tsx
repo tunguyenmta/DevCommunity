@@ -203,7 +203,7 @@ const Header: React.FC = () => {
             ),
             key: "3",
             onClick: async () => {
-                const res = await fetch("/pages/api/auth", {
+                const res = await fetch("http://localhost:3000/pages/api/auth", {
                     method: "DELETE",
                     headers: {
                         "Content-Type": "application/json",

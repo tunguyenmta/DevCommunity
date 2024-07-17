@@ -35,7 +35,7 @@ const Page = ({ params }: { params: { idslug: string } }) => {
       throw new Error("Failed to fetch user token");
     }
     const data = await res.json();
-    const result1 = await fetch("/pages/api/auth", {
+    const result1 = await fetch("htpp://localhost:3000/pages/api/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
