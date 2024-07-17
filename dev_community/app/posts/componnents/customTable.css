@@ -1,0 +1,13 @@
+#iconFolderPost .icon-white {
+    filter: brightness(0) invert(1);
+}
+
+#iconFolderPost .icon-blue {
+    filter: invert(46%) sepia(27%) saturate(6609%) hue-rotate(204deg) brightness(99%) contrast(94%);
+}
+
+#table-article .ant-table-tbody {
+    height: 700px !important;
+    min-height: 700px !important;
+}
+

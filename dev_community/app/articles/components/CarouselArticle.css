@@ -1,0 +1,44 @@
+#trending-carousel.carousel .ant-carousel .slick-slider{
+    position: relative !important;
+}
+#trending-carousel.carousel .ant-carousel .slick-dots{
+    position: absolute !important;
+    bottom: 1% !important;
+    right: -80% !important;
+}
+
+#trending-carousel.carousel .ant-carousel .slick-dots li{
+    margin-right: 20px !important;
+}
+
+#trending-carousel.carousel .ant-carousel .slick-dots li button{
+    opacity: 1 !important;
+    width: 15px !important;
+    height: 15px !important;
+    border: 1px solid #3C7FF5 !important;
+}
+
+#trending-carousel.carousel .ant-carousel .slick-dots li button::after{
+    background-color: white !important;
+    opacity: 1 !important;
+    border-radius: 50% !important;
+    border: 1px solid #3C7FF5 !important;
+
+
+}
+
+#trending-carousel.carousel .ant-carousel .slick-dots li.slick-active button::after{
+    background-color: #3C7FF5 !important;
+    opacity: 1 !important;
+}
+
+
+.carousel .ant-carousel .slick-dots li.slick-active button{
+    scale: 1.1 !important;
+    width: 15px !important;
+    background-color: #3C7FF5 !important;
+}
+
+#colored-icon .colored-icon {
+    filter: invert(41%) sepia(89%) saturate(2325%) hue-rotate(202deg) brightness(95%) contrast(101%);
+}

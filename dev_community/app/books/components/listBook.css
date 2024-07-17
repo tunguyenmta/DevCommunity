@@ -1,0 +1,14 @@
+#uploadFile .ant-upload.ant-upload-select {
+    width: 270px !important;
+    height: 220px !important;
+}
+
+#uploadFile .ant-upload-list-item-container {
+    width: 270px !important;
+    height: 220px !important;
+}
+
+#table-books .ant-table-tbody {
+    height: 700px !important;
+    min-height: 700px !important;
+}

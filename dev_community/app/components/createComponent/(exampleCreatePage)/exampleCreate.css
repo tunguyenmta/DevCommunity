@@ -1,0 +1,8 @@
+#example-creator .ant-modal-root .ant-modal-content{
+    min-height: 90vh !important;
+    margin-bottom: 200px;
+}
+
+#example-creator .ant-modal-root .ant-modal-content .ant-modal-footer{
+    display: none !;
+}

@@ -1,0 +1,17 @@
+#category-select .ant-dropdown-trigger {
+    display: block !important;
+    width: 100% !important;
+}
+
+#category-select .ant-dropdown-trigger .ant-space{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 12px !important;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+}
+
+.ant-dropdown.ant-dropdown-placement-bottomLeft{
+    width: 1011px !important;
+}

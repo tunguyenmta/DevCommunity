@@ -1,0 +1,12 @@
+.archive-modal .ant-modal-content .ant-modal-header{
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid #e8e8e8; */
+}
+
+.current-line {
+    border: none !important;
+}
+
+canvas {
+    display: none !important;
+}

@@ -1,0 +1,30 @@
+#book-container .carousel .ant-carousel .slick-slider{
+    position: relative !important;
+}
+#book-container .carousel .ant-carousel .slick-dots{
+    position: absolute !important;
+    bottom: -5% !important;
+    /* right: 50%; */
+    transform: translateY(-50%) !important;
+    right: 0% !important;
+}
+
+#book-container .carousel .ant-carousel .slick-dots li{
+    margin-right: 20px !important;
+}
+
+#book-container .carousel .ant-carousel .slick-dots li button{
+    width: 15px !important;
+    height: 15px !important;
+    border: 1px solid #3C7FF5 !important;
+    opacity: 1 !important;
+    border-radius: 50% !important;
+}
+
+
+
+#book-container .carousel .ant-carousel .slick-dots li.slick-active button{
+    /* scale: 1.1; */
+    /* width: 15px; */
+    background-color: #3C7FF5 !important;
+}

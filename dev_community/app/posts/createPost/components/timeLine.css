@@ -1,0 +1,13 @@
+.ant-tree{
+    padding: 40px 0 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-content-wrapper-normal{
+    padding-top: 10px;
+    padding-left: 15px !important;
+}
+.ant-tree .ant-tree-switcher.ant-tree-switcher-noop::before{
+    height: 23px !important;
+}

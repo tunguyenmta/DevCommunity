@@ -1,0 +1,21 @@
+#component-description .ql-container{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#component-description .ql-toolbar{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+#component-description .ql-container .ql-editor{
+    min-height: 300px !important;
+    max-width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+    border-radius: 12px;
+}
+
+.ql-editor {
+    font-size: 20px !important;
+  }
+

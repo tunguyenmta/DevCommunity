@@ -1,0 +1,12 @@
+
+.scheduletime-pick .ant-picker.ant-picker-outlined .ant-picker-input{
+    padding: 12px 16px;
+    font-size: 16px;
+    min-width: 265px !important;
+    width: 265px;
+}
+
+.ant-picker.ant-picker-outlined .ant-picker-input .ant-picker-suffix svg{
+    width: 24px;
+    height: 24px;
+}

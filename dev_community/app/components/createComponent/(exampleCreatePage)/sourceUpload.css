@@ -1,0 +1,6 @@
+.ant-upload-wrapper .ant-upload.ant-upload-drag{
+    height: unset;
+}
+.ant-upload-wrapper .ant-upload-list-item-container{
+    display: none;
+}

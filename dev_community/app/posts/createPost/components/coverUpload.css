@@ -1,0 +1,15 @@
+.cover-upload .ant-upload-wrapper .ant-upload-list .ant-upload.ant-upload-select{
+    /* width: 171px; */
+    width: 400px !important;
+    height: 250px !important;
+    padding: 40px 16px !important;
+    width: unset;
+}
+.cover-upload .ant-upload-wrapper{
+    width: 400px !important;
+    height: 250px !important;
+}
+.cover-upload .ant-upload-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-done{
+    width: 400px !important;
+    height: 250px !important;
+}

@@ -1,0 +1,8 @@
+#trending-pagination .ant-pagination-options .ant-select.ant-select-outlined.ant-select-selecto{
+    min-width: unset !important;
+}
+
+#trending-pagination .ant-pagination .ant-select-arrow .anticon.anticon-down {
+    width: 11px !important;
+    height: 11px !important;
+}
