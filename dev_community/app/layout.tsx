@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import 'react-toastify/ReactToastify.css';
+import "react-toastify/ReactToastify.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import ContextProvider from "./utils/contextProvider";
 import { cookies } from "next/headers";
@@ -21,15 +21,22 @@ export default function RootLayout({
   const userToken = cookieStore.get("userToken");
   const refreshToken = cookieStore.get("refreshToken");
   return (
-    <ContextProvider initialRefreshToken={refreshToken ? refreshToken.value : ""} initialToken={userToken ? userToken?.value : ""}>
+    <ContextProvider
+      initialRefreshToken={refreshToken ? refreshToken.value : ""}
+      initialToken={userToken ? userToken?.value : ""}
+    >
       <ActiveItemProvider>
-      <html lang="en">
-        <body suppressHydrationWarning={true}>
-          <ToastContainer limit={1}></ToastContainer>
-          <AntdRegistry>{children}</AntdRegistry>
-          <Refresh />
-        </body>
-      </html>
+        <html lang="en">
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests"
+          />
+          <body suppressHydrationWarning={true}>
+            <ToastContainer limit={1}></ToastContainer>
+            <AntdRegistry>{children}</AntdRegistry>
+            <Refresh />
+          </body>
+        </html>
       </ActiveItemProvider>
     </ContextProvider>
   );
