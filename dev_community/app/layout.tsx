@@ -27,10 +27,7 @@ export default function RootLayout({
     >
       <ActiveItemProvider>
         <html lang="en">
-          <meta
-            http-equiv="Content-Security-Policy"
-            content="upgrade-insecure-requests"
-          />
+       
           <body suppressHydrationWarning={true}>
             <ToastContainer limit={1}></ToastContainer>
             <AntdRegistry>{children}</AntdRegistry>
