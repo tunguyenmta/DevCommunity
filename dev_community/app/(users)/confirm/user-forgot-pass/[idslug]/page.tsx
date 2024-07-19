@@ -1,11 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import React, { useEffect, useState } from "react";
-import "../../../social-success/[idslug]/style.css";
+import "../../../social-success/style.css";
 import jwt from "jsonwebtoken";
 import { useAppContext } from "@/app/utils/contextProvider";
-import { useRouter } from "next/navigation";
-import { ErrorMessage } from "formik";
 interface UserProps {
     sub: string;
     auth: string;
@@ -19,6 +17,9 @@ interface UserProps {
     exp: number;
     email: string;
 }
+
+
+
 const Page = ({ params }: { params: { idslug: string } }) => {
     const { setUserToken } = useAppContext();
     const [messageError, setError] = useState(false);
@@ -28,7 +29,7 @@ const Page = ({ params }: { params: { idslug: string } }) => {
             setError(true);
         }
         const data = await res.json();
-        const result1 = await fetch("htpp://localhost:3000/pages/api/auth", {
+        const result1 = await fetch("/pages/api/auth", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

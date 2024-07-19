@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import "./style.css";
+import "../style.css";
 import jwt from "jsonwebtoken";
 import { useAppContext } from "@/app/utils/contextProvider";
 import { useRouter } from "next/navigation";
